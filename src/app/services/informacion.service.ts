@@ -26,7 +26,7 @@ export class InformacionService {
   public carga_sobre_nosotrs() {
     this.http.get('https://htmltoangular-portafolio.firebaseio.com/team.json')
     .subscribe( data => {
-        console.log(data.json());
+        // console.log(data.json());
         this.carga_about = true;
         this.equipo = data.json();
     });
